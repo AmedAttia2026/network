@@ -93,32 +93,6 @@ const quizData = {
             { type: 'mcq', q: "In a Use-Case Diagram, the system boundary is represented by a __________.", options: ["a) circle", "b) dashed line", "c) rectangle", "d) triangle"], correct: 2 }
         ]
     },
-    'tutorial-7': {
-        title: "tutorial-7",
-        data: [
-            { type: 'mcq', q: "Software testing is a process of evaluating a software product to check if it matches the actual __________.", options: ["a) design", "b) code", "c) requirements", "d) performance"], correct: 2 },
-            { type: 'mcq', q: "The main goal of testing is to identify __________ in the software.", options: ["a) features", "b) requirements", "c) defects", "d) algorithms"], correct: 2 },
-            { type: 'mcq', q: "What is a software defect?", options: ["a) An intentional bug", "b) A flaw or error that causes the software to fail", "c) A feature request", "d) An aesthetic issue"], correct: 1 },
-            { type: 'mcq', q: "The two main types of testing are Functional Testing and __________ Testing.", options: ["a) System", "b) Unit", "c) Regression", "d) Non-Functional"], correct: 3 },
-            { type: 'mcq', q: "Functional Testing is concerned with the system's __________.", options: ["a) performance", "b) security", "c) features and functions", "d) usability"], correct: 2 },
-            { type: 'mcq', q: "Non-Functional Testing is concerned with the system's __________.", options: ["a) what it does", "b) how it performs", "c) what it looks like", "d) its business value"], correct: 1 },
-            { type: 'mcq', q: "The two main approaches to testing are Black-Box Testing and __________ Testing.", options: ["a) White-Box", "b) Grey-Box", "c) Green-Box", "d) Red-Box"], correct: 0 },
-            { type: 'mcq', q: "Black-Box Testing is also known as __________-based testing.", options: ["a) code", "b) structure", "c) functionality", "d) requirement"], correct: 2 },
-            { type: "mcq", "q": "In Black-Box Testing, the tester has no knowledge of the internal __________ or structure of the software.", "options": ["a) code", "b) design", "c) functionality", "d) requirements"], "correct": 0 },
-            { "type": "mcq", "q": "White-Box Testing is also known as __________-based testing.", "options": ["a) functionality", "b) external", "c) internal", "d) code"], "correct": 3 },
-            { "type": "mcq", "q": "In White-Box Testing, the tester has knowledge of the internal __________ and structure of the software.", "options": ["a) design", "b) user interface", "c) business logic", "d) code"], "correct": 0 },
-            { "type": "mcq", "q": "What is Unit Testing?", "options": ["a) Testing the entire system", "b) Testing individual components or units of a software", "c) Testing the integration between components", "d) Testing the user interface"], "correct": 1 },
-            { "type": "mcq", "q": "Integration Testing is the process of testing the __________ between different modules or components.", "options": ["a) code", "b) interfaces", "c) design", "d) functionality"], "correct": 1 },
-            { "type": "mcq", "q": "System Testing involves testing the entire and fully __________ system.", "options": ["a) designed", "b) integrated", "c) deployed", "d) coded"], "correct": 1 },
-            { "type": "mcq", "q": "Acceptance Testing is done to check if the system meets the __________'s requirements.", "options": ["a) developer", "b) manager", "c) client", "d) tester"], "correct": 2 },
-            { "type": "mcq", "q": "Regression Testing is done to ensure that new changes or additions to the software have not introduced any new __________.", "options": ["a) features", "b) defects", "c) requirements", "d) bugs"], "correct": 1 },
-            { "type": "mcq", "q": "Smoke Testing is a preliminary test to ensure that the most important __________ of the software are working.", "options": ["a) features", "b) bugs", "c) defects", "d) requirements"], "correct": 0 },
-            { "type": "mcq", "q": "What is the primary goal of Smoke Testing?", "options": ["a) To find all possible bugs", "b) To ensure the software is stable enough for further testing", "c) To test all features in detail", "d) To test the user interface"], "correct": 1 },
-            { "type": "mcq", "q": "Static Testing is a type of testing where the software is not __________.", "options": ["a) deployed", "b) run", "c) designed", "d) coded"], "correct": 1 },
-            { "type": "mcq", "q": "What is an example of Static Testing?", "options": ["a) Running the software with test cases", "b) Reviewing the code and documents", "c) Testing the user interface", "d) Deploying the software"], "correct": 1 },
-            { "type": "mcq", "q": "What is Dynamic Testing?", "options": ["a) Testing the software's documentation", "b) Testing the software by running it", "c) Testing the software's design", "d) Testing the software's requirements"], "correct": 1 },
-            { "type": "mcq", "q": "What is an example of Dynamic Testing?", "options": ["a) Code review", "b) Requirements analysis", "c) Running a test script on the software", "d) Documenting the system architecture"], "correct": 2 }
-        ]
-    }
 };
+
 

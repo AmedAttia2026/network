@@ -279,9 +279,9 @@ function showAnswer(card, questionObj, isReviewMode = false) {
 
         feedbackElement.style.display = 'block';
         if (isCorrect) {
-            feedbackElement.innerHTML = `<span class="correct-answer-highlight">إجابة صحيحة!</span>`;
+            feedbackElement.innerHTML = `<span class="correct-answer-highlight">🎉 Correct answer</span>`;
         } else {
-            feedbackElement.innerHTML = `<span class="incorrect-answer-highlight">إجابة خاطئة. الإجابة الصحيحة هي: ${questionObj.options[questionObj.correct]}</span>`;
+            feedbackElement.innerHTML = `<span class="incorrect-answer-highlight">❌ ${questionObj.options[questionObj.correct]}</span>`;
         }
 
     } else {

@@ -1,33 +1,62 @@
 const quizData = {
-    courseTitle: "Server Administration",
-    'tutorial-1': {
-        title: "tutorial-1",
+    courseTitle: "Linux Server Administration",
+    'serverAdminQuiz': {
+        title: "Server Administration Quiz",
         data: [
-            { type: 'mcq', q: "The types of software maintenance are:", options: ["a) Corrective, Adaptive, Perfective, and Predictive", "b) Corrective, Adaptive, Perfective, and Preventative", "c) Corrective, Proactive, Reactive, and Adaptive", "d) Corrective, Preventive, Corrective, and Perfective"], correct: 1 },
-            { type: 'mcq', q: "The main objective of Adaptive Maintenance is:", options: ["a) Fixing bugs", "b) Meeting new requirements", "c) Altering software to fit changing software.", "d) Reducing further maintenance needs"], correct: 2 },
-            { type: 'mcq', q: "The primary goal of perfective maintenance is:", options: ["a) Fixing bugs", "b) Meeting new requirements", "c) Reducing further maintenance", "d) Adapting to changing environments"], correct: 1 },
-            { type: 'mcq', q: "Preventative is a type of maintenance that involves:", options: ["a) Fixing bugs", "b) Altering software to fit changing software", "c) Meeting new requirements", "d) Reducing further maintenance needs"], correct: 3 },
-            { type: 'mcq', q: "The primary purpose of the Software Development Life Cycle (SDLC) is to:", options: ["a) Design software only", "b) Provide a structured process for developing high-quality software", "c) Focus only on testing", "d) Reduce costs in the development phase"], correct: 1 },
-            { type: 'mcq', q: "SDLC specifies the tasks performed at various stages by a:", options: ["a) Project manager", "b) Software engineer or developer", "c) Quality assurance tester", "d) Business analyst"], correct: 1 },
-            { type: 'mcq', q: "The SDLC ensures that the product meets:", options: ["a) Developer's preferences", "b) Budget constraints only", "c) Customer expectations", "d) Industry standards only"], correct: 2 },
-            { type: 'mcq', q: "Planning and Requirement Analysis stage involves gathering information to:", options: ["a) Design the software architecture", "b) Create the basic plan for the project", "c) Deploy the software", "d) Test the software"], correct: 1 },
-            { type: 'mcq', q: "The purpose of the Planning and Requirement Analysis stage is to:", options: ["a) Design the software", "b) Understand what is needed for the project.", "c) Test the software", "d) Deploy the software"], correct: 1 },
-            { type: 'mcq', q: "Stage-3: Designing Architecture involves:", options: ["a) Creating test cases", "b) Selecting the best design idea from the DDS", "c) Deploying the product", "d) Gathering initial requirements"], correct: 1 },
-            { type: 'mcq', q: "The DDS document is used to:", options: ["a) List down software requirements", "b) Design the software architecture", "c) Test the software", "d) Deploy the software"], correct: 1 },
-            { type: 'mcq', q: "DDS (Design Document Specification) document contains:", options: ["a) Final code", "b) User manuals", "c) Different ideas for building the software.", "d) Test results"], correct: 2 },
-            { type: 'mcq', q: "Product Testing and Integration stage of SDLC involves:", options: ["a) Gathering client feedback", "b) Creating test cases and executing them.", "c) Defining requirements", "d) Designing architecture"], correct: 1 },
-            { type: 'mcq', q: "The purpose of testing in the SDLC is to:", options: ["a) Design the software", "b) Ensure the software works as expected", "c) Gather client requirements", "d) Deploy the software"], correct: 1 },
-            { type: 'mcq', q: "The Product Testing and Integration stage is used to:", options: ["a) Deploy the software", "b) Find and fix mistakes in the software", "c) Design the software", "d) Gather client feedback"], correct: 1 },
-            { type: 'mcq', q: "Product testing is compared to testing a car before selling it to ensure the software meets:", options: ["a) Performance benchmarks", "b) Market demand", "c) Quality standards", "d) User interface guidelines"], correct: 2 },
-            { type: 'mcq', q: "Which of the following is NOT a stage in the SDLC?", options: ["a) Planning and Requirement Analysis", "b) Client Feedback Collection", "c) Designing Architecture", "d) Developing Product"], correct: 1 },
-            { type: 'mcq', q: "The relation between testing and maintenance is that Maintenance begins after:", options: ["a) Deployment", "b) Testing identifies issues", "c) Design is complete", "d) Requirements are gathered"], correct: 1 },
-            { type: 'mcq', q: "In agile processes, planning is incremental, and it is easier to change the process to reflect:", options: ["a) Fixed deadlines", "b) Stable requirements", "c) Changing customer requirements.", "d) Internal team preferences"], correct: 2 },
-            { type: 'mcq', q: "The main goal of software maintenance is to:", options: ["a) Design the software", "b) Ensure the software continues to work well after release", "c) Gather client requirements", "d) Deploy the software"], correct: 1 },
-            { type: 'mcq', q: "Waterfall Model does not adapt well to uncertain projects because:", options: ["a) It is too simple", "b) It requires stable requirements.", "c) It focuses on documentation", "d) It emphasizes testing"], correct: 1 },
-            { type: 'mcq', q: "Waterfall model is known as a:", options: ["a) Agile life cycle model", "b) Linear-sequential life cycle model", "c) Iterative life cycle model", "d) Spiral life cycle model"], correct: 1 },
-            { type: 'mcq', q: "Which of the following is a disadvantage of the Waterfall Model?", options: ["a) Clear Milestones", "b) Flexibility to Changes", "c) Stable Requirements", "d) Inflexibility to Changes"], correct: 3 },
-            { type: 'mcq', q: "The system of Incremental development is a series of:", options: ["a) Single, large releases", "b) Versions (increments), with each version adding functionality to the previous version.", "c) Unrelated modules", "d) Prototypes that are discarded"], correct: 1 }
-        ]
-    },
-};
+            // --- Part 1: Fill in the Blank (الإجابات تظهر مباشرة) ---
+            { type: 'fill', q: "1. Linux is ________ software, meaning it's free to use and modify, while Windows requires client access licenses.", correct: "open-source", showAnswer: true },
+            { type: 'fill', q: "2. RAID stands for Redundant Array of ________ Disks.", correct: "Independent", showAnswer: true },
+            { type: 'fill', q: "3. RAID 0 uses a method called ________ where data is split evenly across multiple disks.", correct: "striping", showAnswer: true },
+            { type: 'fill', q: "4. ________ can survive two simultaneous disk failures by using double parity blocks.", correct: "RAID 6", showAnswer: true },
+            { type: 'fill', q: "5. In LVM terminology, PV stands for ________ Volume.", correct: "Physical", showAnswer: true },
+            { type: 'fill', q: "6. LVM allows administrators to take ________ for backups or testing purposes.", correct: "snapshots", showAnswer: true },
 
+            // --- Part 2: True or False ---
+            { type: 'true_false', q: "Windows Server is more lightweight and efficient than Linux in terms of resource usage.", correct: false, correction: "Linux is more lightweight and efficient; Windows requires more CPU, RAM, and disk space." },
+            { type: 'true_false', q: "RAID 0 provides maximum data safety through complete redundancy.", correct: false, correction: "RAID 0 provides maximum performance but has no redundancy/safety." },
+            { type: 'true_false', q: "RAID 1 provides fast write speeds and 100% usable disk space.", correct: false, correction: "RAID 1 provides data protection and fast reads, but has slower writes and results in 50% space waste." },
+            { type: 'true_false', q: "LVM stands for Logical Volume Manager and provides flexible storage management.", correct: true },
+            { type: 'true_false', q: "RAID 5 requires a minimum of two disks and can survive one disk failure.", correct: false, correction: "RAID 5 requires a minimum of 3+ disks and can survive one disk failure." },
+            { type: 'true_false', q: "Linux uses centralised package managers while Windows requires manually downloading installers.", correct: true },
+            { type: 'true_false', q: "RAID 10 combines mirroring and striping for both performance and safety.", correct: true },
+
+            // --- Part 3: Multiple Choice / Arrangement ---
+            { 
+                type: 'mcq', 
+                q: "Detect the minimum number of drives needed for each RAID type:", 
+                options: [
+                    "A. RAID 0: 2+ disks",
+                    "B. RAID 1: 2+ disks",
+                    "C. RAID 5: 3+ disks",
+                    "D. RAID 10: 4+ drives"
+                ], 
+                correct: [0, 1, 2, 3] 
+            },
+            { 
+                type: 'arrangement', 
+                q: "Arrange the LVM layers from the basic layer to higher:", 
+                options: [
+                    "A. Physical Volume (PV)",
+                    "B. Logical Volume (LV)",
+                    "C. Volume Group (VG)"
+                ], 
+                correct_order: [0, 2, 1] // PV -> VG -> LV
+            },
+
+            // --- Part 4: Technical Terms ---
+            { type: 'fill', q: "A method for combining multiple partitions on different disks into one large virtual device", correct: "RAID (Redundant Array of Independent Disks)", showAnswer: true },
+            { type: 'fill', q: "The storage management system that offers enhanced flexibility, scalability, and reliability in Linux", correct: "LVM (Logical Volume Manager)", showAnswer: true },
+            { type: 'fill', q: "RAID configuration that uses striping with no redundancy", correct: "RAID 0", showAnswer: true },
+            { type: 'fill', q: "The LVM component that represents individual hard drives or partitions", correct: "Physical Volume (PV)", showAnswer: true },
+
+            // --- Part 5: Short Answer ---
+            { type: 'fill', q: "Two advantages of using RAID in server environments", correct: "Data redundancy/fault tolerance and Higher performance.", showAnswer: true },
+            { type: 'fill', q: "Two benefits of LVM compared to traditional partition management", correct: "Flexible capacity (dynamic resizing) and Snapshots (for backups/testing).", showAnswer: true },
+            { type: 'fill', q: "Two reasons why Linux might be preferred over Windows for server environments", correct: "Lower Cost (open-source) and Better Performance/Efficiency (more lightweight).", showAnswer: true },
+
+            // --- Part 6: Analysis and Justification ---
+            { type: 'fill', q: "Fault Tolerance Planning: RAID level with highest fault tolerance for large arrays and mechanism", correct: "RAID 6. It uses Double Parity (two parity blocks) to survive two simultaneous disk failures.", showAnswer: true },
+            { type: 'fill', q: "System Administration Efficiency: Key Linux feature to simplify software management", correct: "Centralized Package Manager. Automates installation, updates, and dependency management from centralized repositories.", showAnswer: true }
+        ]
+    }
+};
